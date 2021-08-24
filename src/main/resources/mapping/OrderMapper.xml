@@ -32,13 +32,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	<select id="getOrderById" resultType="com.test.sharding.entity.Order">
 		select
-		o.order_id,
-		o.user_id,
-		o.order_name
+		o.order_id as orderId,
+		o.user_id as userId,
+		o.order_name as orderName
 		from t_order o
 		join t_order_item i on o.order_id = i.order_id
 		where o.order_id = #{orderId}
 	</select>
-
 
 </mapper>

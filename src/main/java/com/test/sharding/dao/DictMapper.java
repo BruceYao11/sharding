@@ -1,10 +1,10 @@
 package com.test.sharding.dao;
 
 import com.test.sharding.entity.Dict;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
+import com.test.sharding.entity.User;
+import org.apache.ibatis.annotations.*;
+
+import java.util.List;
 
 @Mapper
 public interface DictMapper {

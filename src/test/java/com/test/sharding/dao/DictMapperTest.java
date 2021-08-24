@@ -1,15 +1,14 @@
 package com.test.sharding.dao;
 
 import com.test.sharding.entity.Dict;
+import com.test.sharding.entity.User;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.Random;
-
-import static org.junit.jupiter.api.Assertions.*;
+import java.util.List;
 
 /**
  * @author: yaoji
@@ -24,7 +23,7 @@ class DictMapperTest {
     private DictMapper dictMapper;
 
     @Test
-    void insertDict() {
+    public void insertDict() {
         Dict dict = new Dict();
         dict.setDictKey("xx");
         dict.setDictValue("xxxx");
@@ -32,8 +31,9 @@ class DictMapperTest {
     }
 
     @Test
-    void deleteDict() {
+    public void deleteDict() {
         Long id = 636938749288120320L;
         dictMapper.deleteDict(id);
     }
+
 }
