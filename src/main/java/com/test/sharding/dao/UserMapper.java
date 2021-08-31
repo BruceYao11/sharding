@@ -1,6 +1,5 @@
 package com.test.sharding.dao;
 
-import com.test.sharding.entity.Dict;
 import com.test.sharding.entity.User;
 import org.apache.ibatis.annotations.*;
 

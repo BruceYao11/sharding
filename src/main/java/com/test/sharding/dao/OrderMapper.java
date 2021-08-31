@@ -1,7 +1,6 @@
 package com.test.sharding.dao;
 
 import com.test.sharding.entity.Order;
-import com.test.sharding.entity.OrderVO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

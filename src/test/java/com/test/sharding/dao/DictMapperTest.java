@@ -25,15 +25,20 @@ class DictMapperTest {
     @Test
     public void insertDict() {
         Dict dict = new Dict();
-        dict.setDictKey("xx");
+        dict.setDictKey("xxxxxxx");
         dict.setDictValue("xxxx");
         dictMapper.insertDict(dict);
     }
 
     @Test
     public void deleteDict() {
-        Long id = 636938749288120320L;
+        Long id = 637312484063051776L;
         dictMapper.deleteDict(id);
+    }
+
+    @Test
+    public void listDict() {
+        List<Dict> list = dictMapper.listDict();
     }
 
 }

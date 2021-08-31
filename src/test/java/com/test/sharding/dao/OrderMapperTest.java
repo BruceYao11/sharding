@@ -17,7 +17,7 @@ public class OrderMapperTest {
 
     @Test
     public void insertOrder() {
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 10; i++) {
             Order order = new Order();
             order.setUserId((long)i);
             order.setOrderName("order" + order.getUserId());

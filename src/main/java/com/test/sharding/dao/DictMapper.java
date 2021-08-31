@@ -1,7 +1,6 @@
 package com.test.sharding.dao;
 
 import com.test.sharding.entity.Dict;
-import com.test.sharding.entity.User;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
@@ -14,5 +13,8 @@ public interface DictMapper {
 
     @Delete("delete from t_dict where id = #{id}")
     void deleteDict(@Param("id") Long id);
+
+    @Select("select * from t_dict")
+    List<Dict> listDict();
 
 }
