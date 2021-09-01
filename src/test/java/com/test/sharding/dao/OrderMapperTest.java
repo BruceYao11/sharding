@@ -1,7 +1,6 @@
 package com.test.sharding.dao;
 
 import com.test.sharding.entity.Order;
-import com.test.sharding.entity.OrderVO;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +16,7 @@ public class OrderMapperTest {
 
     @Test
     public void insertOrder() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 2; i++) {
             Order order = new Order();
             order.setUserId((long)i);
             order.setOrderName("order" + order.getUserId());
