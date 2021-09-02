@@ -2,11 +2,8 @@ package com.test.sharding.service;
 
 import com.test.sharding.dao.OrderMapper;
 import com.test.sharding.entity.Order;
-import org.apache.shardingsphere.transaction.annotation.ShardingTransactionType;
-import org.apache.shardingsphere.transaction.core.TransactionType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -21,8 +18,6 @@ public class OrderService {
     @Autowired
     private OrderMapper orderMapper;
 
-    @ShardingTransactionType(TransactionType.XA)
-    @Transactional
     public int insertOrder(Order order) {
         int i = orderMapper.insertOrder(order);
         if (order.getUserId() > 100) {

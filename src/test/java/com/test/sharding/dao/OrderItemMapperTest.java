@@ -24,7 +24,7 @@ class OrderItemMapperTest {
     @Test
     void insertOrderItem() {
         OrderItem orderItem = new OrderItem();
-        orderItem.setOrderId(636878541421543425L);
+        orderItem.setOrderId(639858511827697665L);
         orderItem.setUserId(1L);
         orderItem.setItemName("YYYY");
         orderItemMapper.insertOrderItem(orderItem);
